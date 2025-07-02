@@ -67,6 +67,8 @@ RUN cd /usr/local/lib/node_modules/n8n && \
 RUN npm install -g npm@11.4.2
 # Instala canvas directamente sin entrar a carpetas que aún no existen
 RUN npm install @napi-rs/canvas
+# Install n8n globally
+RUN npm install -g n8n
 
 
 EXPOSE 5678/tcp
